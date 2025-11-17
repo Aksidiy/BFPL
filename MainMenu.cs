@@ -17,6 +17,8 @@ namespace BFPL
                 "\tChapter 2: Basic sintax of C#\n" +
                 "\t\tItem 1 - Discriminant (basic math and if else)\n" +
                 "\t\tItem 2 - Jordan-Gauss method (basic arrays and cycles)\n" +
+                "\tChapter 3: Basic about Classes in C#\n" +
+                "\t\tItem 1 - List of Money\n" +
                 "\tDD - Tasks from DeadDaniel:\n" +
                 "\t\tTask 1 - ComputersRating\n" +
                 "\t\tTask 2 - ComputersRatingVer2\n" +
