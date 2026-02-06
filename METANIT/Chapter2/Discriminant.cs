@@ -1,5 +1,4 @@
-﻿
-namespace BFPL.Chapter2
+﻿namespace BFPL.METANIT.Chapter2
 {
     /*
      * Class for test basic math and if else sintax

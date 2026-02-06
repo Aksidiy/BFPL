@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BFPL.Chapter3
+namespace BFPL.METANIT.Chapter3
 {
     internal class BasicClassSintaxClass
     {

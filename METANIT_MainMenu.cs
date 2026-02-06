@@ -1,17 +1,17 @@
-﻿using BFPL.Chapter1;
-using BFPL.Chapter2;
-using BFPL.DanielsTasks;
+﻿using BFPL.METANIT.Chapter1;
+using BFPL.METANIT.Chapter2;
+using BFPL.METANIT.DanielsTasks;
 
 namespace BFPL
 {
-    public class BFPLMainMenu
+    public class BFPL_METANIT_MainMenu
     {
         //Вывод в консоль меню BFPL
-        private void PrintBFPLMainMenu()
+        private void PrintBFPL_METANIT_MainMenu()
         {
             Console.WriteLine
                 (
-                "\nBFPL main menu:\n" +
+                "\nBFPL METANIT branch main menu:\n" +
                 "\tChapter 1: HelloWorld!\n" +
                 "\t\tItem 1 - HelloWorld!\n" +
                 "\tChapter 2: Basic sintax of C#\n" +
@@ -30,10 +30,12 @@ namespace BFPL
         }
 
         //Обработчик меню BFPL
-        public void CallBFPLMainMenu()
+        public void CallBFPL_METANIT_MainMenu()
         {
-            Console.WriteLine("Welcome to BFPL - Big Fucking Practice Library!\n");
-            PrintBFPLMainMenu();
+            Console.WriteLine(
+                "Welcome to BFPL - Big Fucking Practice Library!\n" +
+                "It`s METANIT branch.\"");
+            PrintBFPL_METANIT_MainMenu();
 
             //TODO: уточнить костыль ли это (да конечно блять костыль) надо узнать как красиво сделать
             while (true)
@@ -121,12 +123,12 @@ namespace BFPL
                     }
                     else if (shosenPath == "menu")
                     {
-                        PrintBFPLMainMenu();
+                        PrintBFPL_METANIT_MainMenu();
                     }
                     else if (shosenPath == "clear")
                     {
                         Console.Clear();
-                        PrintBFPLMainMenu();
+                        PrintBFPL_METANIT_MainMenu();
                     }
                     else if (shosenPath == "exit")
                     {

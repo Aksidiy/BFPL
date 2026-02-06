@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace BFPL.DanielsTasks
+namespace BFPL.METANIT.DanielsTasks
 {
     internal class ComputersRatingVer2
     {

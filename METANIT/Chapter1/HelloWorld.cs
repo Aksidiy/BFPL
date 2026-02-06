@@ -1,5 +1,4 @@
-﻿
-namespace BFPL.Chapter1
+﻿namespace BFPL.METANIT.Chapter1
 {
     internal class HelloWorld
     {

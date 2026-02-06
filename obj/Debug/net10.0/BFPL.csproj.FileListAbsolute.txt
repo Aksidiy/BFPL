@@ -1,0 +1,12 @@
+C:\CodeProjects\Charp\BFPL\bin\Debug\net10.0\BFPL.deps.json
+C:\CodeProjects\Charp\BFPL\bin\Debug\net10.0\BFPL.dll
+C:\CodeProjects\Charp\BFPL\bin\Debug\net10.0\BFPL.pdb
+C:\CodeProjects\Charp\BFPL\obj\Debug\net10.0\BFPL.GeneratedMSBuildEditorConfig.editorconfig
+C:\CodeProjects\Charp\BFPL\obj\Debug\net10.0\BFPL.AssemblyInfoInputs.cache
+C:\CodeProjects\Charp\BFPL\obj\Debug\net10.0\BFPL.AssemblyInfo.cs
+C:\CodeProjects\Charp\BFPL\obj\Debug\net10.0\BFPL.csproj.CoreCompileInputs.cache
+C:\CodeProjects\Charp\BFPL\obj\Debug\net10.0\BFPL.sourcelink.json
+C:\CodeProjects\Charp\BFPL\obj\Debug\net10.0\BFPL.dll
+C:\CodeProjects\Charp\BFPL\obj\Debug\net10.0\refint\BFPL.dll
+C:\CodeProjects\Charp\BFPL\obj\Debug\net10.0\BFPL.pdb
+C:\CodeProjects\Charp\BFPL\obj\Debug\net10.0\ref\BFPL.dll

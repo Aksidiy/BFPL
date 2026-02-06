@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BFPL.Chapter3.MoneyList
+namespace BFPL.METANIT.Chapter3.MoneyList
 {
     public class MoneyList
     {

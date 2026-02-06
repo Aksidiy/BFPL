@@ -1,6 +1,4 @@
-﻿
-
-namespace BFPL.DanielsTasks
+﻿namespace BFPL.METANIT.DanielsTasks
 {
     internal class ComputersRating
     {
