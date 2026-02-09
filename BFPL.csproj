@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="StepikCharp\Chapter1\" />
+    <Folder Include="STEPIK\Basic_Sintax\" />
   </ItemGroup>
 
 </Project>

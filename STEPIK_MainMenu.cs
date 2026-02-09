@@ -2,31 +2,31 @@
 
 namespace BFPL
 {
-    public class BFPL_StepikCharp_MainMenu
+    public class BFPL_STEPIK_MainMenu
     {
         //Вывод в консоль меню BFPL
-        private void PrintBFPL_StepikCharp_MainMenu()
+        public static void PrintBFPL_STEPIK_MainMenu()
         {
             Console.WriteLine
                 (
-                "\nBFPL StepikCharp branch main menu:\n" +
+                "\nBFPL STEPIC branch main menu:\n" +
                 "\tChapter 1: HelloWorld!\n" +
                 "\t\tItem 1 - HelloWorld!\n" +
                 "\tclear - Clear console\n" +
-                "\tmenu - Show BFPL main menu\n" +
-                "\texit - Exit and close BFPL\n" +
+                "\tmenu - Show STEPIC branch main menu\n" +
+                "\treturn - Return to BFPL main menu\n" +
                 "Write chapter and item separated by a space or use keywords:\n"
                 );
         }
 
         //Обработчик меню BFPL
-        public void CallBFPL_StepikCharp_MainMenu()
+        public void CallBFPL_STEPIK_MainMenu()
         {
             Console.WriteLine(
                 "Welcome to BFPL - Big Fucking Practice Library!\n" +
-                "It`s StepikCharp branch."
+                "It`s STEPIC branch."
                 );
-            PrintBFPL_StepikCharp_MainMenu();
+            PrintBFPL_STEPIK_MainMenu();
 
             //TODO: уточнить костыль ли это (да конечно блять костыль) надо узнать как красиво сделать
             while (true)
@@ -43,19 +43,20 @@ namespace BFPL
                         Console.WriteLine($"You chose {shosenPath} path.\n");
                         //PATH CODE HERE!!!
                     }
-
                     else if (shosenPath == "menu")
                     {
-                        PrintBFPL_StepikCharp_MainMenu();
+                        PrintBFPL_STEPIK_MainMenu();
                     }
                     else if (shosenPath == "clear")
                     {
                         Console.Clear();
-                        PrintBFPL_StepikCharp_MainMenu();
+                        PrintBFPL_STEPIK_MainMenu();
                     }
-                    else if (shosenPath == "exit")
+                    else if (shosenPath == "return")
                     {
-                        break;
+                        //Go to BFPL main menu
+                        BFPL_MainMenu.PrintBFPL_MainMenu();
+                        return;
                     }
                     else
                     {
