@@ -6,8 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="STEPIK\Basic_Sintax\" />
-  </ItemGroup>
-
 </Project>

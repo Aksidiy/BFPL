@@ -38,55 +38,46 @@ namespace BFPL
             //TODO: уточнить костыль ли это (да конечно блять костыль) надо узнать как красиво сделать
             while (true)
             {
-                try
-                {
-                    //Ловим ввод юзверя и на всякий в нижний регистр понижаем
-                    //Формат ввода: [chapter number][space][item number] или [ключевое слово]
-                    string shosenPath = Console.ReadLine().ToLower();
+                //Ловим ввод юзверя и на всякий в нижний регистр понижаем
+                //Формат ввода: [chapter number][space][item number] или [ключевое слово]
+                string shosenPath = Console.ReadLine().ToLower();
 
-                    Console.WriteLine($"You chose {shosenPath} path.\n");
-                    //Можно было бы сделать свитч, но он меня раздражает
-                    if (shosenPath == "1 1")
-                    {
-                        HelloWorld();
-                    }
-                    else if (shosenPath == "2 1")
-                    {
-                        Discriminant();
-                    }
-                    else if (shosenPath == "dd 1")
-                    {
-                        ComputersRatingV1();
-                    }
-                    else if (shosenPath == "dd 2")
-                    {
-                        ComputersRatingV2();
-                    }
-                    else if (shosenPath == "menu")
-                    {
-                        PrintBFPL_METANIT_MainMenu();
-                    }
-                    else if (shosenPath == "clear")
-                    {
-                        Console.Clear();
-                        PrintBFPL_METANIT_MainMenu();
-                    }
-                    else if (shosenPath == "return")
-                    {
-                        //Go to BFPL main menu
-                        BFPL_MainMenu.PrintBFPL_MainMenu();
-                        return;
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Path: [{shosenPath}] do not exist.\n");
-                    }
-                }
-                catch (Exception ex)
+                Console.WriteLine($"You chose {shosenPath} path.\n");
+                //Можно было бы сделать свитч, но он меня раздражает
+                if (shosenPath == "1 1")
                 {
-                    Console.WriteLine(
-                        "Всё пропало, Шеф. ВСЁ ПРОПАЛО!\n" +
-                        $"Exception from METANIT branch of BFPL:\n {ex}\n");
+                    HelloWorld();
+                }
+                else if (shosenPath == "2 1")
+                {
+                    Discriminant();
+                }
+                else if (shosenPath == "dd 1")
+                {
+                    ComputersRatingV1();
+                }
+                else if (shosenPath == "dd 2")
+                {
+                    ComputersRatingV2();
+                }
+                else if (shosenPath == "menu")
+                {
+                    PrintBFPL_METANIT_MainMenu();
+                }
+                else if (shosenPath == "clear")
+                {
+                    Console.Clear();
+                    PrintBFPL_METANIT_MainMenu();
+                }
+                else if (shosenPath == "return")
+                {
+                    //Go to BFPL main menu
+                    BFPL_MainMenu.PrintBFPL_MainMenu();
+                    return;
+                }
+                else
+                {
+                    Console.WriteLine($"Path: [{shosenPath}] do not exist.\n");
                 }
             }
         }
