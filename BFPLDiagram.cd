@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BFPL.STEPIK.Basic_Plus_Sintax.Fraction" Collapsed="true">
+    <Position X="25.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAYAUAAAAAACAAAAAAIAAEAAAAAEA=</HashCode>
+      <FileName>STEPIK\Basic_Plus_Sintax\Fraction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BFPL.STEPIK.Basic_Plus_Sintax.OnlineStore" Collapsed="true">
+    <Position X="25.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAQAAAAAAAAAgAAACAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>STEPIK\Basic_Plus_Sintax\OnlineStore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BFPL.STEPIK.Basic_Plus_Sintax.School" Collapsed="true">
+    <Position X="21.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEIAAAAAAgAABAAAAEAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>STEPIK\Basic_Plus_Sintax\School.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BFPL.STEPIK.Basic_Plus_Sintax.Student" Collapsed="true">
+    <Position X="25.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>STEPIK\Basic_Plus_Sintax\School.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BFPL.STEPIK.Basic_Plus_Sintax.Taxi" Collapsed="true">
+    <Position X="27" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAABAAAAAAAAACAAgAAAAA=</HashCode>
+      <FileName>STEPIK\Basic_Plus_Sintax\Taxi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BFPL.STEPIK.Basic_Sintax.Kombinator" Collapsed="true">
+    <Position X="28.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>STEPIK\Basic_Sintax\Kombinator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BFPL.STEPIK.Basic_Sintax.MySqrt" Collapsed="true">
+    <Position X="23.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>STEPIK\Basic_Sintax\MySqrt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BFPL.STEPIK.Basic_Sintax.PRGSW" Collapsed="true">
+    <Position X="27" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAgAgACAAAAAgAAAABAA=</HashCode>
+      <FileName>STEPIK\Basic_Sintax\PRGSW.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BFPL.STEPIK.Basic_Sintax.ProductParser" Collapsed="true">
+    <Position X="28.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>STEPIK\Basic_Sintax\ProductParser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BFPL.STEPIK.Basic_Sintax.Skobochky" Collapsed="true">
+    <Position X="23.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>STEPIK\Basic_Sintax\Skobochky.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BFPL.STEPIK.Basic_Sintax.XesAndZeros" Collapsed="true">
+    <Position X="28.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAABAAAQBAAIAAAAAAAAAEAAIgAAAAAAAAAAAAA=</HashCode>
+      <FileName>STEPIK\Basic_Sintax\XesAndZeros.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BFPL.METANIT.Chapter1.HelloWorld" Collapsed="true">
+    <Position X="27" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>METANIT\Chapter1\HelloWorld.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BFPL.METANIT.Chapter2.DiscriminantClass" Collapsed="true">
+    <Position X="23.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAEAAAAAAEQQAAACEAAAAQEAABAgAAAI=</HashCode>
+      <FileName>METANIT\Chapter2\Discriminant.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BFPL.METANIT.Chapter3.MoneyList.MoneyList" Collapsed="true">
+    <Position X="21.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>METANIT\Chapter3\MoneyList\MoneyList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BFPL.Chapter3.Transport.BasicTransport.Transport" Collapsed="true">
+    <Position X="12.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>METANIT\Chapter3\Transport\BasicTransport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BFPL.Chapter3.Transport.AviationTransportType.Airplane" Collapsed="true">
+    <Position X="12.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>METANIT\Chapter3\Transport\BasicTransport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BFPL.Chapter3.Transport.AviationTransportType.Helicopter" Collapsed="true">
+    <Position X="17" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>METANIT\Chapter3\Transport\BasicTransport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BFPL.Chapter3.Transport.WaterTransportType.Boat" Collapsed="true">
+    <Position X="19.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>METANIT\Chapter3\Transport\BasicTransport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BFPL.Chapter3.Transport.WaterTransportType.Tanker" Collapsed="true">
+    <Position X="5.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>METANIT\Chapter3\Transport\BasicTransport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BFPL.Chapter3.Transport.AutoTransportType.Jeep" Collapsed="true">
+    <Position X="8" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>METANIT\Chapter3\Transport\BasicTransport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BFPL.Chapter3.Transport.RailwayTransportType.Train" Collapsed="true">
+    <Position X="10.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>METANIT\Chapter3\Transport\BasicTransport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BFPL.Chapter3.Transport.RailwayTransportType.Monorail" Collapsed="true">
+    <Position X="14.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>METANIT\Chapter3\Transport\BasicTransport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BFPL.METANIT.Chapter3.BasicClassSintaxClass" Collapsed="true">
+    <Position X="21.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAACAgAAAAiAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>METANIT\Chapter3\BasicClassSintax.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BFPL.METANIT.DanielsTasks.ComputersRating" Collapsed="true">
+    <Position X="28.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>METANIT\DanielsTasks\ComputersRating.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BFPL.METANIT.DanielsTasks.ComputersRatingVer2" Collapsed="true">
+    <Position X="21.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAICACAgBAAAAAADCAAAAAAAAAAAA=</HashCode>
+      <FileName>METANIT\DanielsTasks\ComputersRatingVer2.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BFPL.BFPL_MainMenu" Collapsed="true">
+    <Position X="23.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BFPL_MainMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BFPL.BFPL_METANIT_MainMenu" Collapsed="true">
+    <Position X="25.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAABAAAAAAAAgAAAAACAAEAA=</HashCode>
+      <FileName>METANIT_MainMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BFPL.BFPL_STEPIK_MainMenu" Collapsed="true">
+    <Position X="27" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>STEPIK_MainMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Consolas" Size="9" />
+</ClassDiagram>

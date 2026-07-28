@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\CodeProjects\\Charp\\BFPL\\BFPL.csproj",
+      "projectUniqueName": "C:\\CodeProjects\\CSHARP\\Aksidiy\\BFPL\\BFPL.csproj",
       "projectName": "BFPL",
-      "projectPath": "C:\\CodeProjects\\Charp\\BFPL\\BFPL.csproj",
+      "projectPath": "C:\\CodeProjects\\CSHARP\\Aksidiy\\BFPL\\BFPL.csproj",
       "packagesPath": "C:\\Users\\dimon\\.nuget\\packages\\",
-      "outputPath": "C:\\CodeProjects\\Charp\\BFPL\\obj\\",
+      "outputPath": "C:\\CodeProjects\\CSHARP\\Aksidiy\\BFPL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -74,7 +74,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
