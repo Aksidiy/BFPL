@@ -5,12 +5,14 @@ using System.Text;
 
 namespace BFPL.STEPIK.Basic_Plus_Sintax
 {
+    // Класс симулирует простую дробь без отделения целой части.
     public class Fraction
     {
 
         int Numerator;
         int Denominator;
 
+        // Конструктор
         public Fraction(int numerator, int denominator = 1)
         {
             Numerator = numerator;
@@ -20,6 +22,7 @@ namespace BFPL.STEPIK.Basic_Plus_Sintax
             ToLower();
         }
 
+        // Проверка на ноль
         public void IsZeroDenominator()
         {
             if (Denominator == 0)
@@ -28,6 +31,7 @@ namespace BFPL.STEPIK.Basic_Plus_Sintax
             }
         }
 
+        // Минус и минус сокращаются
         public void MinusAndMinus()
         {
             if (Denominator < 0 && Numerator < 0)
@@ -37,6 +41,7 @@ namespace BFPL.STEPIK.Basic_Plus_Sintax
             }
         }
 
+        // Сокращение дроби
         public void ToLower()
         {
             int min = (Math.Abs(Numerator) <= Math.Abs(Denominator)) ? Math.Abs(Numerator) : Math.Abs(Denominator);
@@ -51,6 +56,7 @@ namespace BFPL.STEPIK.Basic_Plus_Sintax
             }
         }
 
+        // Печать в консоль
         public void PrintFraction()
         {
             IsZeroDenominator();
