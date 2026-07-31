@@ -4,6 +4,9 @@ using System.Text;
 
 namespace BFPL.STEPIK.Basic_Plus_Sintax
 {
+    /// <summary>
+    /// Класс симулирует онлайн магазин.
+    /// </summary>
     public class OnlineStore
     {
         public Dictionary<int, string> ProductsInStore;
@@ -15,6 +18,9 @@ namespace BFPL.STEPIK.Basic_Plus_Sintax
             ShoppingCart = new List<int>();
         }
 
+        /// <summary>
+        /// Выводит в консоль список товаров онлайн магазина.
+        /// </summary>
         public void PrintProductsInStore()
         {
             if (ProductsInStore.Count == 0)
@@ -30,6 +36,9 @@ namespace BFPL.STEPIK.Basic_Plus_Sintax
             }
         }
 
+        /// <summary>
+        /// Выводит в консоль список товаров в корзине.
+        /// </summary>
         public void PrintShoppingCart()
         {
             if (ShoppingCart.Count == 0)
@@ -52,6 +61,11 @@ namespace BFPL.STEPIK.Basic_Plus_Sintax
             }
         }
 
+        /// <summary>
+        /// Добавляет товар в онлайн магазин.
+        /// </summary>
+        /// <param name="id"> Индекс товара </param>
+        /// <param name="product"> Название товара. </param>
         public void AddProductInStore(int id, string product)
         {
             if (ProductsInStore.ContainsKey(id))
