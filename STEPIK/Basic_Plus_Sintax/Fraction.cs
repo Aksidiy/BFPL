@@ -5,14 +5,25 @@ using System.Text;
 
 namespace BFPL.STEPIK.Basic_Plus_Sintax
 {
-    // Класс симулирует простую дробь без отделения целой части.
+    /// <summary>
+    /// Класс симулирует простую дробь без отделения целой части.
+    /// </summary>
     public class Fraction
     {
 
         int Numerator;
         int Denominator;
 
-        // Конструктор
+        /// <summary>
+        /// Конструктор дроби.
+        /// </summary>
+        /// <remarks>
+        /// Содержит проверку на НОЛЬ в Знаменателе.
+        /// Сокращает знак минуса если числитель и знаменатель ОБА отрицательные.
+        /// Сокращает значения дроби до минимально возможных целых чисел.
+        /// </remarks>
+        /// <name="numerator"> Числитель дроби. </param>
+        /// <name="denominator"> Знаменатель дроби. НЕ МОЖЕТ БЫТЬ РАВЕН НУЛЮ!!! </param>
         public Fraction(int numerator, int denominator = 1)
         {
             Numerator = numerator;
@@ -22,16 +33,24 @@ namespace BFPL.STEPIK.Basic_Plus_Sintax
             ToLower();
         }
 
-        // Проверка на ноль
+        /// <summary>
+        /// Проверка на 0 в знаменателе.
+        /// </summary>
+        /// <exception cref="System.ArithmeticException">
+        /// Выбрасывается если Знаменатель равен НУЛЮ.
+        /// </exception>
         public void IsZeroDenominator()
         {
+
             if (Denominator == 0)
             {
                 throw new ArithmeticException("Denominator can be ZERO, but computer can't calculate INFINITY.");
             }
         }
 
-        // Минус и минус сокращаются
+        /// <summary>
+        /// "Минус на минус даёт плюс"
+        /// </summary>
         public void MinusAndMinus()
         {
             if (Denominator < 0 && Numerator < 0)
@@ -41,7 +60,9 @@ namespace BFPL.STEPIK.Basic_Plus_Sintax
             }
         }
 
-        // Сокращение дроби
+        /// <summary>
+        /// Сокращеет дробь до минимальных возможных числителя и знаменателя.
+        /// </summary>
         public void ToLower()
         {
             int min = (Math.Abs(Numerator) <= Math.Abs(Denominator)) ? Math.Abs(Numerator) : Math.Abs(Denominator);
@@ -56,7 +77,9 @@ namespace BFPL.STEPIK.Basic_Plus_Sintax
             }
         }
 
-        // Печать в консоль
+        /// <summary>
+        /// Печатает дробь в консоль. Если дробь можно свести к целому числу, то печатает его.
+        /// </summary>
         public void PrintFraction()
         {
             IsZeroDenominator();
