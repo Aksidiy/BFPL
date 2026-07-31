@@ -18,12 +18,12 @@ namespace BFPL.STEPIK.Basic_Plus_Sintax
         /// Конструктор дроби.
         /// </summary>
         /// <remarks>
-        /// Содержит проверку на НОЛЬ в Знаменателе.
-        /// Сокращает знак минуса если числитель и знаменатель ОБА отрицательные.
+        /// Содержит проверку на НОЛЬ в Знаменателе.<br/>
+        /// Сокращает знак минуса если числитель и знаменатель ОБА отрицательные.<br/>
         /// Сокращает значения дроби до минимально возможных целых чисел.
         /// </remarks>
-        /// <name="numerator"> Числитель дроби. </param>
-        /// <name="denominator"> Знаменатель дроби. НЕ МОЖЕТ БЫТЬ РАВЕН НУЛЮ!!! </param>
+        /// <param name="numerator"> Числитель дроби. </param>
+        /// <param name="denominator"> Знаменатель дроби. НЕ МОЖЕТ БЫТЬ РАВЕН НУЛЮ!!! </param>
         public Fraction(int numerator, int denominator = 1)
         {
             Numerator = numerator;
@@ -36,12 +36,11 @@ namespace BFPL.STEPIK.Basic_Plus_Sintax
         /// <summary>
         /// Проверка на 0 в знаменателе.
         /// </summary>
-        /// <exception cref="System.ArithmeticException">
+        /// <exception cref="ArithmeticException">
         /// Выбрасывается если Знаменатель равен НУЛЮ.
         /// </exception>
         public void IsZeroDenominator()
         {
-
             if (Denominator == 0)
             {
                 throw new ArithmeticException("Denominator can be ZERO, but computer can't calculate INFINITY.");
