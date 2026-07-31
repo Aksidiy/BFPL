@@ -1,5 +1,10 @@
-﻿![Земля в иллюминаторе!](CAT.jpg)
-<h1> BFPL - Big Fucking Practice Library </h1>
+﻿<p align="center">
+<img src="CAT.jpg" width="300" height="300"><br>
+Автор изображения: Eric Geusz @spacegooose<br>
+Лицензия: неизвестна (не обнаружена).<br>
+По умолчанию — все права защищены (All Rights Reserved).
+</p>
+<h1 align="center"> BFPL - Big Fucking Practice Library </h1>
 <ol>
     <h2><li> What is BFPL? </li></h2>
     <ol>
