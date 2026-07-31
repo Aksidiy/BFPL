@@ -4,6 +4,9 @@ using System.Text;
 
 namespace BFPL.STEPIK.Basic_Plus_Sintax
 {
+    /// <summary>
+    /// Класс симулирует школу.
+    /// </summary>
     public class School
     {
         public string Name;
@@ -17,6 +20,9 @@ namespace BFPL.STEPIK.Basic_Plus_Sintax
             Console.WriteLine($"Школа {Name} успешно создана.");
         }
 
+        /// <summary>
+        /// Выводит в консоль список учеников школы.
+        /// </summary>
         public void PrintStudents()
         {
             Students.Sort();
@@ -34,12 +40,20 @@ namespace BFPL.STEPIK.Basic_Plus_Sintax
             }
         }
 
+        /// <summary>
+        /// Добавляет ученика в школу.
+        /// </summary>
+        /// <param name="student"> Ученик для добавления в школу. </param>
         public void AddNewStudent(Student student)
         {
             Students.Add(student);
             Console.WriteLine($"Студент {student.LastName} {student.FirstName} успешно зачислен в школу {Name}.");
         }
 
+        /// <summary>
+        /// Исключает ученика из школы по индексу.
+        /// </summary>
+        /// <param name="index"> Индекс ученика для исключения. </param>
         public void RemoveStudentByIndex(int index)
         {
             if (0 <= index && index < Students.Count)
@@ -53,6 +67,9 @@ namespace BFPL.STEPIK.Basic_Plus_Sintax
             }
         }
 
+        /// <summary>
+        /// Пример работы класса School.
+        /// </summary>
         public static void StartSchoolSimulation()
         {
             Console.WriteLine("Введите название новой школы:");
@@ -94,11 +111,15 @@ namespace BFPL.STEPIK.Basic_Plus_Sintax
         }
     }
 
+    /// <summary>
+    /// Класс симулирует ученика школы.
+    /// </summary>
     public class Student
     {
         public string LastName;
         public string FirstName;
         public int Age;
+
         public Student(string lastName, string firstName, int age)
         {
             LastName = lastName;
