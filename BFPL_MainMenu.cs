@@ -1,6 +1,8 @@
-﻿using BFPL.METANIT;
+﻿using System;
+using BFPL.METANIT;
 using BFPL.STEPIK;
 
+//МОЖЕТ УЖЕ УДАЛИШЬ ФАЙЛЫ СБОРОК???
 namespace BFPL
 {
     public static class BFPL_MainMenu
