@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace BFPL.METANIT.DanielsTasks
 {
+    // жаль что не будте работать, ведь тестовых данных больше не существует
     internal class ComputersRatingVer2
     {
         //Мне ой как лень марать руки об ручной ввод пути, вот до GUI дойду и буду окошком запрашивать
@@ -10,7 +11,7 @@ namespace BFPL.METANIT.DanielsTasks
         public const string _TEST_COMPUTERS_JSON_PATH = "C:\\TESTDATA\\ComputersRatingVer2\\Computers.json";
         public const string _TEST_RATING_JSON_PATH = "C:\\TESTDATA\\ComputersRatingVer2\\Rating.json";
 
-        /* ДАНО: 
+        /* ДАНО:
             * У клиента много ПК, каждый пк имеет 4-ре параметра:
             * скорость пк, скорость сканирования, скорость интернета и время распознавания
             * Данные собираются за период и делается среднее за период для каждого пк клиента
@@ -42,25 +43,25 @@ namespace BFPL.METANIT.DanielsTasks
             [Required(ErrorMessage = "Where is ClientID?")]
             public string clientId;
 
-            public double? computersSpeedRating;
-            public double? computersScanSpeedRating;
-            public double? computersInternetSpeedRating;
-            public double? computersRecognitionSpeedRating;
+            public double computersSpeedRating = 0;
+            public double computersScanSpeedRating = 0;
+            public double computersInternetSpeedRating = 0;
+            public double computersRecognitionSpeedRating = 0;
 
             public Client(string clientId)
             {
                 this.clientId = clientId;
             }
         }
-        //TODO: Хотел через массивы сделать, а они тут статические оказывается
-        public List<Client>? Clients = new List<Client>();
+
+        public List<Client> Clients = new List<Client>();
 
         public void ParseClientsFromJSON(string pathToClientsJSONFile = _TEST_CLIENTS_JSON_PATH) 
         {
             //Открываем файл
             StreamReader streamReader = new StreamReader(pathToClientsJSONFile);
 
-            string curentLineOfJSON;
+            string? curentLineOfJSON;
 
             while (true)
             {
@@ -131,14 +132,14 @@ namespace BFPL.METANIT.DanielsTasks
             }
         }
 
-        public List<Computer>? Computers = new List<Computer>();
+        public List<Computer> Computers = new List<Computer>();
 
         public void ParseComputersFromJSON(string pathToComputersJSONFile = _TEST_COMPUTERS_JSON_PATH)
         {
             //Открываем файл
             StreamReader streamReader = new StreamReader(pathToComputersJSONFile);
 
-            string curentLineOfJSON;
+            string? curentLineOfJSON;
 
             while (true)
             {
@@ -194,17 +195,14 @@ namespace BFPL.METANIT.DanielsTasks
                 if (clientComputers.Count==0)
                 {
                     //Нет комьютеров - нет мультиков
-                    currentClient.computersSpeedRating = 0;
-                    currentClient.computersScanSpeedRating = 0;
-                    currentClient.computersInternetSpeedRating = 0;
-                    currentClient.computersRecognitionSpeedRating = 0;
+                    continue;
                 }
                 else 
                 {
                     //Поиск имён копьютеров клиента
                     //(вот тут можно использовать linq и просто запросом вырвать только список имён, но я же не ищу лёгких путей УХАХАХАХАХА)
                     List<string> clientComputersNames = new List<string>();
-                    foreach (Computer computer in clientComputers) 
+                    foreach (Computer computer in clientComputers)
                     {
                         if (!clientComputersNames.Contains(computer.computerPosteName))
                         {

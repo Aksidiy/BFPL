@@ -1,11 +1,12 @@
-﻿
+﻿using BFPL.METANIT;
+using BFPL.STEPIK;
 
 namespace BFPL
 {
-    public class BFPL_MainMenu
+    public static class BFPL_MainMenu
     {
         //Вывод в консоль меню BFPL
-        public static void PrintBFPL_MainMenu()
+        public static void PrintMainMenu()
         {
             Console.WriteLine
                 (
@@ -20,12 +21,11 @@ namespace BFPL
         }
 
         //Обработчик меню BFPL
-        public void CallBFPL_MainMenu()
+        public static void CallBFPLMainMenu()
         {
             Console.WriteLine("Welcome to BFPL - Big Fucking Practice Library!\n");
-            PrintBFPL_MainMenu();
+            PrintMainMenu();
 
-            //TODO: уточнить костыль ли это (да конечно блять костыль) надо узнать как красиво сделать
             while (true)
             {
                 try
@@ -33,31 +33,29 @@ namespace BFPL
                     //Ловим ввод юзверя и на всякий в нижний регистр понижаем
                     string shosenPath = Console.ReadLine().ToLower();
 
-                    //Можно было бы сделать свитч, но он меня раздражает
+                    //Тут сделал через ифы, варианты со switch глубже
                     if (shosenPath == "mn")
                     {
                         //Go to METANIT branch
                         Console.WriteLine($"You chose {shosenPath} path.\n");
-                        BFPL_METANIT_MainMenu metanitMainMenu = new BFPL_METANIT_MainMenu();
-                        metanitMainMenu.CallBFPL_METANIT_MainMenu();
+                        METANIT.MainMenu.CallMETANITMainMenu();
                     }
                     else if (shosenPath == "st")
                     {
                         //Go to STEPIK branch
                         Console.WriteLine($"You chose {shosenPath} path.\n");
-                        BFPL_STEPIK_MainMenu stepikMainMenu = new BFPL_STEPIK_MainMenu();
-                        stepikMainMenu.CallBFPL_STEPIK_MainMenu();
+                        STEPIK.MainMenu.CallSTEPIKMainMenu();
                     }
                     else if (shosenPath == "mm")
                     {
                         //Call main menu
-                        PrintBFPL_MainMenu();
+                        PrintMainMenu();
                     }
                     else if (shosenPath == "cl")
                     {
                         //Clear console and call main menu
                         Console.Clear();
-                        PrintBFPL_MainMenu();
+                        PrintMainMenu();
                     }
                     else if (shosenPath == "ex")
                     {

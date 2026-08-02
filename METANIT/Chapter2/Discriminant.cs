@@ -3,7 +3,7 @@
     /*
      * Class for test basic math and if else sintax
      */
-    internal class DiscriminantClass
+    public class DiscriminantClass
     {
 
         private double coeffA, coeffB, coeffC;

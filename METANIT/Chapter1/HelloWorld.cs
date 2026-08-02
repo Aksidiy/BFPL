@@ -1,8 +1,8 @@
 ﻿namespace BFPL.METANIT.Chapter1
 {
-    internal class HelloWorld
+    public class HelloWorld
     {
-        public void PrintHelloWorld()
+        public static void PrintHelloWorld()
         {
             Console.WriteLine("Hello World!");
         }
