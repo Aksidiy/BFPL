@@ -1,10 +1,8 @@
-﻿<p align="center">
-<img src="CAT.jpg" width="300" height="300"><br>
-Автор изображения: Eric Geusz @spacegooose<br>
-Лицензия: неизвестна (не обнаружена).<br>
-По умолчанию — все права защищены (All Rights Reserved).
+﻿<p align="center" >
+<img src="BFPL_by_ChatGPT.png" height="500"><br>
+Banner illustration created by ChatGPT (OpenAI) from my concept.
 </p>
-<h1 align="center"> BFPL - Big Fucking Practice Library </h1>
+<h1 align="center"> BFPL - Big F*cking Practice Library </h1>
 <ol>
     <h2><li> What is BFPL? </li></h2>
     <ol>
