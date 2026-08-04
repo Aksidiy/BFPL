@@ -11,16 +11,19 @@ namespace BFPL.STEPIK.AllAlone
         public int[] Answers { get; }
         // Счетчик правильных ответов
         private int correctAnswersCount = 0;
+        // Имя пользователя
+        public string Name { get; set; }
 
         // Заполняем списки вопросов и ответов
-        public GeniusIdiot(string[] questions, int[] answers)
+        public GeniusIdiot(string[] questions, int[] answers, string name)
         {
             if (questions.Length != 5 || answers.Length != 5)
             {
-                throw new ArgumentOutOfRangeException($"Количество вопросов и ответов должно быть равно 5. Переданные ");
+                throw new ArgumentOutOfRangeException($"Количество вопросов и ответов должно быть равно 5.");
             }
             Questions = questions;
             Answers = answers;
+            Name = name;
         }
 
         // Цикл опроса
@@ -64,14 +67,10 @@ namespace BFPL.STEPIK.AllAlone
         }
 
         // Вывод результата
-        public void GetCorrectAnswersCount()
-        {
-            Console.WriteLine();
-            Console.WriteLine($"Количество правильных ответов: {correctAnswersCount}");
-        }
+        public int GetCorrectAnswersCount() => correctAnswersCount;
 
         // Пример работы
-        public static void ExampleOfWork()
+        public static void TryExampleOfWork()
         {
             // 1. Создаем списки вопросов и ответов
             string[] questions = new string[5];
@@ -88,12 +87,38 @@ namespace BFPL.STEPIK.AllAlone
             answers[3] = 60;
             answers[4] = 2;
 
-            GeniusIdiot geniusIdiot = new GeniusIdiot(questions, answers);
+            // Получаем имя тестируемого
+            Console.WriteLine("Введите имя тестируемого:");
+            string name = Console.ReadLine() ?? "Безымянный";
 
-            // 3. Цикл опроса
-            geniusIdiot.StartTestCircle();
-            // 4. Вывод результата
-            geniusIdiot.GetCorrectAnswersCount();
+            GeniusIdiot geniusIdiot = new GeniusIdiot(questions, answers, name);
+
+            while (true)
+            {
+                // 3. Цикл опроса
+                geniusIdiot.StartTestCircle();
+
+                // 4. Вывод результата
+                Console.WriteLine($"{geniusIdiot.Name}, вот результат теста.");
+                Console.WriteLine($"Количество правильных ответов: {geniusIdiot.correctAnswersCount}\n");
+
+                while (true)
+                {
+                    Console.WriteLine("Вы хотите повторить тест? ДА/НЕТ");
+                    string unswer = (Console.ReadLine() ?? "").ToUpper();
+                    if (unswer == "ДА") 
+                    {
+                        Console.WriteLine("Хорошо, начинаем тест заново.\n");
+                        break; 
+                    }
+                    else if (unswer == "НЕТ")
+                    {
+                        Console.WriteLine("Принято, удачи.\n");
+                        return; 
+                    }
+                    else Console.WriteLine("Неопознанный ответ.\n");
+                }
+            }
         }
     }
 }

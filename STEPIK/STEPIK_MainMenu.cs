@@ -108,7 +108,7 @@ namespace BFPL.STEPIK
                         }
                     case "3 1":
                         Console.WriteLine($"You chose {shosenPath} path.\n");
-                        GeniusIdiot.ExampleOfWork();
+                        GeniusIdiot.TryExampleOfWork();
 
                         break;
                     case "menu":
