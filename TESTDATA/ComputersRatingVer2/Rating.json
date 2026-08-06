@@ -1,0 +1,73 @@
+{
+"ClientsRatingData": [
+	{
+		"ClientId" : 70964,
+		"ComputersSpeedRating" : 0,
+		"ComputersScanSpeedRating" : 0,
+		"ComputersInternetSpeedRating" : 0.6,
+		"ComputersRecognitionSpeedRating" : 0
+	},
+	{
+		"ClientId" : 85324,
+		"ComputersSpeedRating" : 0,
+		"ComputersScanSpeedRating" : 0,
+		"ComputersInternetSpeedRating" : 0,
+		"ComputersRecognitionSpeedRating" : 0
+	},
+	{
+		"ClientId" : 83354,
+		"ComputersSpeedRating" : 0,
+		"ComputersScanSpeedRating" : 0,
+		"ComputersInternetSpeedRating" : 0,
+		"ComputersRecognitionSpeedRating" : 0
+	},
+	{
+		"ClientId" : 47614,
+		"ComputersSpeedRating" : 0,
+		"ComputersScanSpeedRating" : 0,
+		"ComputersInternetSpeedRating" : 0,
+		"ComputersRecognitionSpeedRating" : 0
+	},
+	{
+		"ClientId" : 38848,
+		"ComputersSpeedRating" : 0.6,
+		"ComputersScanSpeedRating" : 0.6,
+		"ComputersInternetSpeedRating" : 0,
+		"ComputersRecognitionSpeedRating" : 0
+	},
+	{
+		"ClientId" : 43969,
+		"ComputersSpeedRating" : 0,
+		"ComputersScanSpeedRating" : 0.5,
+		"ComputersInternetSpeedRating" : 1,
+		"ComputersRecognitionSpeedRating" : 0
+	},
+	{
+		"ClientId" : 9610,
+		"ComputersSpeedRating" : 1,
+		"ComputersScanSpeedRating" : 0,
+		"ComputersInternetSpeedRating" : 1,
+		"ComputersRecognitionSpeedRating" : 1
+	},
+	{
+		"ClientId" : 4639,
+		"ComputersSpeedRating" : 0,
+		"ComputersScanSpeedRating" : 0,
+		"ComputersInternetSpeedRating" : 0,
+		"ComputersRecognitionSpeedRating" : 0
+	},
+	{
+		"ClientId" : 73962,
+		"ComputersSpeedRating" : 1,
+		"ComputersScanSpeedRating" : 1,
+		"ComputersInternetSpeedRating" : 0,
+		"ComputersRecognitionSpeedRating" : 1
+	},
+	{
+		"ClientId" : 93076,
+		"ComputersSpeedRating" : 0.6,
+		"ComputersScanSpeedRating" : 1.1,
+		"ComputersInternetSpeedRating" : 1.1,
+		"ComputersRecognitionSpeedRating" : 0.6
+	}
+]}

@@ -29,13 +29,13 @@
             }
             else if (D == 0)
             {
-                Result = new object[] { -coeffB / (2 * coeffA) };
+                Result = new object[] { (double)(-coeffB / (2 * coeffA)) };
             }
             else
             {
                 double x1, x2;
-                x1 = (-coeffB + Math.Sqrt(D)) / (2 * coeffA);
-                x2 = (-coeffB + Math.Sqrt(D)) / (2 * coeffA);
+                x1 = (double)((-coeffB + Math.Sqrt(D)) / (2 * coeffA));
+                x2 = (double)((-coeffB - Math.Sqrt(D)) / (2 * coeffA));
                 Result = new object[] { x1, x2 };
             }
         }

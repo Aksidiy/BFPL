@@ -3,23 +3,22 @@ using System.ComponentModel.DataAnnotations;
 
 namespace BFPL.METANIT.DanielsTasks
 {
-    // жаль что не будте работать, ведь тестовых данных больше не существует
     internal class ComputersRatingVer2
     {
         //Мне ой как лень марать руки об ручной ввод пути, вот до GUI дойду и буду окошком запрашивать
-        public const string _TEST_CLIENTS_JSON_PATH = "C:\\TESTDATA\\ComputersRatingVer2\\Clients.json";
-        public const string _TEST_COMPUTERS_JSON_PATH = "C:\\TESTDATA\\ComputersRatingVer2\\Computers.json";
-        public const string _TEST_RATING_JSON_PATH = "C:\\TESTDATA\\ComputersRatingVer2\\Rating.json";
+        public const string _TEST_CLIENTS_JSON_PATH = "C:\\CodeProjects\\CSHARP\\Aksidiy\\BFPL\\TESTDATA\\ComputersRatingVer2\\Clients.json";
+        public const string _TEST_COMPUTERS_JSON_PATH = "C:\\CodeProjects\\CSHARP\\Aksidiy\\BFPL\\TESTDATA\\ComputersRatingVer2\\Computers.json";
+        public const string _TEST_RATING_JSON_PATH = "C:\\CodeProjects\\CSHARP\\Aksidiy\\BFPL\\TESTDATA\\ComputersRatingVer2\\Rating.json";
 
         /* ДАНО:
-            * У клиента много ПК, каждый пк имеет 4-ре параметра:
-            * скорость пк, скорость сканирования, скорость интернета и время распознавания
-            * Данные собираются за период и делается среднее за период для каждого пк клиента
+            * У каждого Клиента много ПК, каждый ПК имеет 4-ре параметра:
+            * скорость ПК, скорость сканирования, скорость интернета и время распознавания
+            * Данные собираются за период и делается среднее за период для каждого ПК Клиента
             * Есть мин требования correctComputers соответствено:
-            * 13 - скорость компутера 100 мс (computersSpeedRating)
-            * 14 - скорость сканирования 10 сек (10000 мс) (computersScanSpeedRating)
-            * 15 - скорость инета 100 мс (computersInternetSpeedRating)
-            * 16 - время получения распознания 3 сек (3000 мс) (computersRecognitionSpeedRating)
+            * 13 - скорость компьютера <= 100 мс (computersSpeedRating)
+            * 14 - скорость сканирования <= 10000 мс (computersScanSpeedRating)
+            * 15 - скорость инета <= 100 мс (computersInternetSpeedRating)
+            * 16 - время получения распознания <= 3000 мс (computersRecognitionSpeedRating)
             * Расчет рейтинга для каждого клиента по каждому из параметров отдельно
         */
 
@@ -32,7 +31,7 @@ namespace BFPL.METANIT.DanielsTasks
                 [
                     {
                         "ClientId" : 12345,
-                        *дальше не интересует*
+                        "Organization" : "Name of organization",
                     },
                 ]
         }
@@ -102,7 +101,7 @@ namespace BFPL.METANIT.DanielsTasks
             [
                 {
                     "ClientId": 12345,
-                    "Poste": "PC-NAME",
+                    "Poste": "PC NAME",
                     "Type": 12,
                     "IsNewest": 1,
                     "Value": 1861781
@@ -169,7 +168,7 @@ namespace BFPL.METANIT.DanielsTasks
                     string computerIsNewestFromJSON = curentLineOfJSON.Split(":")[1].Replace(",", "").Replace(" ", "");
 
                     //Пропускаем старые записи
-                    if (computerIsNewestFromJSON == "0") 
+                    if (computerIsNewestFromJSON == "0")
                     {
                         continue;
                     }

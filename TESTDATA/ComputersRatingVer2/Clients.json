@@ -1,0 +1,44 @@
+﻿{
+  "ClientsData": [
+    {
+      "ClientId": 70964,
+      "Organization": "Defense Industries "
+    },
+    {
+      "ClientId": 85324,
+      "Organization": "Fallen Ltd"
+    },
+    {
+      "ClientId": 83354,
+      "Organization": "Cnet B.V"
+    },
+    {
+      "ClientId": 47614,
+      "Organization": "Pages A.G"
+    },
+    {
+      "ClientId": 38848,
+      "Organization": "Congo Stores Corp"
+    },
+    {
+      "ClientId": 43969,
+      "Organization": "Switching Corp"
+    },
+    {
+      "ClientId": 9610,
+      "Organization": "Acquired Holdings A.G"
+    },
+    {
+      "ClientId": 4639,
+      "Organization": "Farm SIA"
+    },
+    {
+      "ClientId": 73962,
+      "Organization": "Appropriations GmbH"
+    },
+    {
+      "ClientId": 93076,
+      "Organization": "Paperback Software A.G"
+    }
+  ]
+}
