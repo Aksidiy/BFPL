@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Text;
 
 namespace BFPL.STEPIK.AllAlone
@@ -50,14 +51,39 @@ namespace BFPL.STEPIK.AllAlone
             {
                 Console.WriteLine(Questions[indexes[i]]);           // а) Выводим вопрос
 
-                Console.Write("Ваш ответ: ");              // б) Запрашиваем ответ
-                int userAnswer = int.Parse(Console.ReadLine() ?? "0");
+                int userAnswer = GetCorrectUserInput();              // б) Запрашиваем ответ
 
                 if (userAnswer == Answers[indexes[i]])              // в) Сравниваем
                 {
                     correctAnswersCount++;                 // г) Увеличиваем счетчик
                 }
             }
+        }
+
+        // Задание 1 "Сделать защиту от дурака"
+        private int GetCorrectUserInput()
+        {
+            int correctUserInput = 0;
+
+            while (true)
+            {
+                Console.Write("Ваш ответ: ");
+                string userInput = Console.ReadLine() ?? "";
+
+                try
+                {
+                    correctUserInput = Convert.ToInt32(userInput);
+                }
+                catch
+                {
+                    Console.WriteLine("Пожалуйста, введите число!");
+                    continue;
+                }
+
+                break;
+            }
+
+            return correctUserInput;
         }
 
         // Тасование Фишера–Йетса
