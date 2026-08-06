@@ -45,7 +45,6 @@ namespace BFPL.STEPIK.AllAlone
 
             List<int> indexes = new List<int>() { 0, 1, 2, 3, 4 };
             Shuffle(indexes); // Не LINQ, Правило: "пока курс не прошёл, не трогаю".
-            indexes.ForEach(item => Console.WriteLine(item));
 
             for (int i = 0; i < 5; i++)
             {
