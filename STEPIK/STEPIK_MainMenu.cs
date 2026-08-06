@@ -103,7 +103,9 @@ namespace BFPL.STEPIK
                             (third * first).PrintFraction();
                             (third / first).PrintFraction();
 
-                            Fraction last = new Fraction(3, 0);
+                            //Fraction last = new Fraction(3, 0);
+
+                            PrintBFPL_STEPIK_MainMenu();
                             break;
                         }
                     case "3 1":
