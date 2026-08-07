@@ -6,8 +6,8 @@ namespace BFPL.STEPIK.AllAlone
     public class GeniusIdiot
     {
         // Cписки вопросов и ответов
-        public string[] Questions { get; }
-        public int[] Answers { get; }
+        public string[]? Questions { get; private set; }
+        public int[]? Answers { get; private set; }
 
         private string[] diagnoses =
         [
@@ -24,16 +24,53 @@ namespace BFPL.STEPIK.AllAlone
         // Имя пользователя
         public string Name { get; set; }
 
-        // Заполняем списки вопросов и ответов
-        public GeniusIdiot(string[] questions, int[] answers, string name)
+        // Или Имя пользователя и Количество вопросов
+        public GeniusIdiot(string name, uint questionsAndAnswersCount)
         {
-            if (questions.Length != 5 || answers.Length != 5)
+            if (questionsAndAnswersCount == 0)
             {
-                throw new ArgumentOutOfRangeException($"Количество вопросов и ответов должно быть равно 5.");
+                throw new ArgumentOutOfRangeException($"Количество вопросов и ответов не может быть равно НУЛЮ.");
             }
+            Name = name;
+            SetQuestionsAndAnswers(questionsAndAnswersCount);
+        }
+
+        // Или Имя пользователя и списки Вопросов и Ответов
+        public GeniusIdiot(string name, string[] questions, int[] answers)
+        {
+            if (questions.Length != answers.Length)
+            {
+                throw new ArgumentOutOfRangeException($"Количество вопросов и ответов должно быть РАВНЫМ.");
+            }
+            Name = name;
             Questions = questions;
             Answers = answers;
-            Name = name;
+        }
+
+        public void SetQuestionsAndAnswers(uint questionsAndAnswersCount)
+        {
+            Questions = new string[questionsAndAnswersCount];
+            Answers = new int[questionsAndAnswersCount];
+
+            for (int i = 0; i < questionsAndAnswersCount; i++) 
+            {
+                Console.WriteLine("Введите вопрос:");
+                Questions[i] = GetCorrectLine();
+
+                Console.WriteLine("Введите ответ:");
+                Questions[i] = GetCorrectLine();
+            }
+        }
+
+        // Щепотка сокращений
+        public static string GetCorrectLine()
+        {
+            while (true)
+            {
+                string? input = Console.ReadLine();
+                if (!string.IsNullOrWhiteSpace(input)) return input;
+                Console.WriteLine("Нельзя ввести пустую строку.");
+            }
         }
 
         // Цикл опроса
@@ -42,7 +79,8 @@ namespace BFPL.STEPIK.AllAlone
             // Обнуляем счётчик
             correctAnswersCount = 0;
 
-            List<int> indexes = new List<int>() { 0, 1, 2, 3, 4 };
+            List<int> indexes = new List<int>();
+            for (int i = 0; i < Questions.Length; i++) indexes.Add(i);
             Shuffle(indexes); // Не LINQ, Правило: "пока курс не прошёл, не трогаю".
 
             for (int i = 0; i < 5; i++)
@@ -132,7 +170,24 @@ namespace BFPL.STEPIK.AllAlone
         }
 
         // Вывод результата
-        public string GetDiagnos() => diagnoses[correctAnswersCount];
+        public string GetDiagnos()
+        {
+            if (correctAnswersCount == 0) // Идиот
+            {
+                return diagnoses[0];
+            }
+            if (correctAnswersCount == Questions.Length) // Гений
+            {
+                return diagnoses[diagnoses.Length - 1];
+            }
+
+            // Всемогущие пропорции
+            int result = (int)((double)correctAnswersCount * (double)diagnoses.Length / (double)Questions.Length);
+
+            if (result == 0) result++; // Кретин
+
+            return diagnoses[result]; // Остальное
+        }
 
         // Пример работы
         public static void TryExampleOfWork()
@@ -154,9 +209,9 @@ namespace BFPL.STEPIK.AllAlone
 
             // Получаем имя тестируемого
             Console.WriteLine("Введите имя тестируемого:");
-            string name = Console.ReadLine() ?? "Безымянный";
+            string name = GeniusIdiot.GetCorrectLine();
 
-            GeniusIdiot geniusIdiot = new GeniusIdiot(questions, answers, name);
+            GeniusIdiot geniusIdiot = new GeniusIdiot(name, questions, answers);
 
             // Проводим тестирование
             geniusIdiot.StartRepetitiveTest();
