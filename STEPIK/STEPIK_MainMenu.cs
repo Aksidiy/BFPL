@@ -83,7 +83,7 @@ namespace BFPL.STEPIK
                     case "3 2":
                         {
                             Console.WriteLine($"You chose {shosenPath} path.\n");
-                            GeniusIdiot.TryExampleOfWork();
+                            GeniusIdiotV2.StartGeniusIdiotV2Test();
                             PrintBFPL_STEPIK_MainMenu();
                             break;
                         }
